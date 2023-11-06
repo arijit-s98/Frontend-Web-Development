@@ -1,2 +1,2 @@
-# Frontend-Basics
-Includes Projects using HTML, CSS
+# Frontend-Development with Sanket Singh
+Includes Projects using HTML, CSS, Javascript. 
