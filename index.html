@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        #qual{
+            text-align: center;
+        }
+        input {
+        text-align: center;
+      }
+      h1{
+        text-align: center;
+      }
+    </style>
+
+</head>
+<body>
+    <h1>Student Registration Form </h1>
+
+    <form>
+        <table align="center" cellpadding="10">
+            <tr>
+                <td><label for="firstname">First Name: </label></td>
+                <td><input type="text" name="firstname" id="firstname" maxlength="40"></td>
+                <td><span>(max 40 characters a-z and A-Z)</span></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name: </label></td>
+                <td><input type="text" name="lastname" id="lastname" maxlength="40"></td>
+                <td><p>(max 40 characters a-z and A-Z)</p></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth: </label></td>
+                <td><input type="date" name="dob" id="dob" maxlength="40"></td>
+            </tr>
+            <tr>
+                <td><label for="emailid">Email Id:</label></td>
+                <td><input type="email" name="emailid" id="emailid"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number:</label></td>
+                <td><input type="number" name="mobile" id="mobile"></td>
+                <td><p>(10 digit number)</p></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    Male: <input type="radio" name="gender" value="Male">
+                    Female:<input type="radio" name="gender" value="Female">
+                    Others:<input type="radio" name="gender" value="Others">
+                </td>
+                
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea name="address" id="address" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="pincode">Pincode:</label></td>
+                <td><input type="number" id="pincode" name="pincode"></textarea></td>
+                <td><p>(6 digit number)</p></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td><input type="text" id="country" name="country" maxlength="15"></textarea></td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td> 
+                    <label for="Singing">Singing</label><input type="checkbox" name="Hobbies" value="Singing" id="Singing">
+                    <label for="Dancing">Dancing</label><input type="checkbox" name="Hobbies" value="Dancing" id="Dancing">
+                    <label for="Reading">Reading</label><input type="checkbox" name="Hobbies" value="Reading" id="Reading">
+                    <label for="Watching Movies">Watching Movie</label><input type="checkbox" name="Hobbies" value="Watching Movies" id="Watching Movies">
+                    <label for="Others">Others</label><input type="checkbox" name="Hobbies" value="Others" id="Others">
+                </td> 
+            </tr>      
+
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <table id="qual" cellpadding="5">
+                        <colgroup span="4"></colgroup>
+                        <tbody> 
+                        <thead>
+                            <tr>
+                                <th>S No.</th>
+                                <th>Examination</th>
+                                <th>Board/University</th>
+                                <th>Percentage</th>
+                                <th>Year of Passing</th>
+                            </tr>
+                        </thead>    
+                            <tr>
+                                <td>1.</td>
+                                <td>Class X</td>
+                                <td>
+                                    <select name="degree" id="degree">
+                                        <option value="cbse">CBSE</option>
+                                        <option value="wbchse">WBCHSE</option>
+                                        <option value="icse">ICSE</option>
+                                        <option value="ugc">UGC</option>
+                                        <option value="makaut">MAKAUT</option>
+                                      </select>
+                                </td>
+                                <td><input type="number" placeholder="percentage"></td>
+                                <td><input type="number" placeholder="passout year"></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Class XII</td>>
+                                <td>
+                                    <select name="degree" id="degree">
+                                        <option value="cbse">CBSE</option>
+                                        <option value="wbchse">WBCHSE</option>
+                                        <option value="icse">ICSE</option>
+                                        <option value="ugc">UGC</option>
+                                        <option value="makaut">MAKAUT</option>
+                                      </select>
+                                </td>
+                                <td><input type="number" placeholder="percentage"></td>
+                                <td><input type="number" placeholder="passout year"></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Graduation</td>
+                                <td>
+                                    <select name="degree" id="degree">
+                                        <option value="cbse">CBSE</option>
+                                        <option value="wbchse">WBCHSE</option>
+                                        <option value="icse">ICSE</option>
+                                        <option value="ugc">UGC</option>
+                                        <option value="makaut">MAKAUT</option>
+                                      </select>
+                                </td>
+                                <td><input type="number" placeholder="percentage"></td>
+                                <td><input type="number" placeholder="passout year"></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Masters</td>
+                                <td>
+                                    <select name="degree" id="degree">
+                                        <option value="cbse">CBSE</option>
+                                        <option value="wbchse">WBCHSE</option>
+                                        <option value="icse">ICSE</option>
+                                        <option value="ugc">UGC</option>
+                                        <option value="makaut">MAKAUT</option>
+                                      </select>
+                                </td>
+                                <td><input type="number" placeholder="percentage"></td>
+                                <td><input type="number" placeholder="passout year"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+                <td><input type="reset"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
