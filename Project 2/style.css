@@ -1,0 +1,173 @@
+:root {
+    --TropicalPeach: #FFC2B5;
+    --BarelyRipeAprico: #FFE3CC;
+    --Justice: #646C8F;
+    --BirchBeige: #DCC3A1;
+    --algae: #033B3D;
+    --weed: #7B6823;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--Justice);
+    background-color: var(--BarelyRipeAprico);
+}
+
+#intro {
+    padding: 4rem 1rem 5rem 1rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+#intro p{
+    font-size: 1rem;
+    color: var(--weed);
+    line-height: 1.5;
+}
+
+.name span {
+    display:block;
+    color:var(--Justice);
+    font-size: 3rem;
+}
+
+#experience ul {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+#experience li {
+    list-style-type: none;
+    padding: 0.5rem;
+    margin-left: 9rem;
+}
+ 
+#experience a {
+    color: var(--Justice);
+}
+
+.section-algae {
+    background-color: var(--algae);
+
+}
+#hire {
+    /* background-color: var(--TropicalPeach); */
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: large;
+}
+
+#hire p {
+    margin-top: 2rem;
+}
+
+nav {
+    font-size: 100%;
+    padding: 0rem;
+    background-color: var(--algae);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+nav a {
+    color: rgb(249, 247, 247);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:rgb(227, 150, 57);
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+nav li:first-child {
+    /* flex-grow: 1; We will write media query to bring this back */
+    flex-basis: 100;
+    font-size: 1.7rem;
+    margin-left: 10rem;
+}
+
+.button {
+    background-color:rgb(75, 172, 210);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: radial-gradient(circle, rgb(12, 13, 9) 0%, rgba(210, 210, 205, 0.838) 100%);
+}
+
+.gradient-section {
+    height: 2px;
+    background: linear-gradient(90deg, rgba(46,56,50,1) 0%, rgba(227,165,49,0.8380602240896359) 100%);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.my-pic {
+    max-height: 400px;
+    max-width: 250px;
+}
+
+.my-pic img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#experience {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0rem;
+}
+
+#experience ul {
+    max-width: 100%;
+    border: solid white 3px;
+    border-radius: 2px;
+    background-color:beige;
+    padding: 1rem;
+}
+
+#experience-header {
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 200px;
+    padding: 5px;
+}
+
+
+@media (min-width: 600px) {
+    nav li:first-child {
+         flex-grow: 1;
+         flex-basis: auto;
+    }
+}
