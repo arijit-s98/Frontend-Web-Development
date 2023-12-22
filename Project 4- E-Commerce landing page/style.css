@@ -1,0 +1,48 @@
+
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+
+.product-image-container {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  max-height: 400px;
+}
+
+
+.product-image {
+  padding: 1px;
+  max-width: 275px;
+  max-height: 250px;
+}
+
+.card-title {
+  padding-left: 10px;
+}
+
+.deals1 {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.deals2{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.media {
+  padding-left: 55rem;
+  padding-right: 0;
+  align-items: end;
+}
